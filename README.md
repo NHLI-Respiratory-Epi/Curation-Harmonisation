@@ -10,7 +10,7 @@ The EHR databases utilised in this project were the Clinical Practice Research D
 
 ## Content
 
-The codelists used for the phenotypes and variables are made publicly available here for transparency and reproducibility. Additionally, we have included the Stata scripts used for curation in CPRD Aurum.
+The codelists used for the phenotypes and variables are made publicly available here for transparency and reproducibility. 
 
 ## Published papers
 
