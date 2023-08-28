@@ -1,0 +1,13 @@
+code,description,coding_system,concept_id,concept_version_id,concept_name
+J41.0,Simple chronic bronchitis,ICD10 codes,C2484,6368,Chronic obstructive pulmonary disease (COPD) Secondary care - BREATHE recommended - 2
+J42,Unspecified chronic bronchitis,ICD10 codes,C2484,6368,Chronic obstructive pulmonary disease (COPD) Secondary care - BREATHE recommended - 2
+J43,Emphysema,ICD10 codes,C2484,6368,Chronic obstructive pulmonary disease (COPD) Secondary care - BREATHE recommended - 2
+J43.1,Panlobular emphysema,ICD10 codes,C2484,6368,Chronic obstructive pulmonary disease (COPD) Secondary care - BREATHE recommended - 2
+J43.2,Centrilobular emphysema,ICD10 codes,C2484,6368,Chronic obstructive pulmonary disease (COPD) Secondary care - BREATHE recommended - 2
+J43.8,Other emphysema,ICD10 codes,C2484,6368,Chronic obstructive pulmonary disease (COPD) Secondary care - BREATHE recommended - 2
+J43.9,"Emphysema, unspecified",ICD10 codes,C2484,6368,Chronic obstructive pulmonary disease (COPD) Secondary care - BREATHE recommended - 2
+J44,Other chronic obstructive pulmonary disease,ICD10 codes,C2484,6368,Chronic obstructive pulmonary disease (COPD) Secondary care - BREATHE recommended - 2
+J44.0,Chronic obstructive pulmonary disease with acute lower respiratory infection,ICD10 codes,C2484,6368,Chronic obstructive pulmonary disease (COPD) Secondary care - BREATHE recommended - 2
+J44.1,"Chronic obstructive pulmonary disease with acute exacerbation, unspecified",ICD10 codes,C2484,6368,Chronic obstructive pulmonary disease (COPD) Secondary care - BREATHE recommended - 2
+J44.8,Other specified chronic obstructive pulmonary disease,ICD10 codes,C2484,6368,Chronic obstructive pulmonary disease (COPD) Secondary care - BREATHE recommended - 2
+J44.9,"Chronic obstructive pulmonary disease, unspecified",ICD10 codes,C2484,6368,Chronic obstructive pulmonary disease (COPD) Secondary care - BREATHE recommended - 2
