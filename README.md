@@ -10,7 +10,7 @@ The EHR databases utilised in this project were the Clinical Practice Research D
 
 ## Content
 
-The codelists used for the phenotypes and variables are made publicly available here for transparency and reproducibility. 
+The [codelists](https://github.com/NHLI-Respiratory-Epi/Curation-Harmonisation/blob/main/codelists/Codelists.md) and algorithms used for the phenotypes and variables are made publicly available for transparency and reproducibility.
 
 ## Published papers
 
