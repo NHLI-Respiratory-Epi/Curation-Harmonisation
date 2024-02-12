@@ -68,12 +68,10 @@ This page gives details on the codelists used in the Curation Harmonisation proj
 * **Source:** Adapted from [COVID-Collateral](https://github.com/johntaz/COVID-Collateral/blob/master/codelists/CSV/aurum_codelist_ethnicity.csv)
 
 * **Additional comments:**
-  - The COVID-Collateral ethnicity codelist was adapted for this project
   - **Main changes:**
-    - As the project is a UK-wide project, we chose to create variables specific to each UK nation's 2011 census categories: _EthnicityEngWales2011_, _EthnicityScot2011_ and _EthnicityNI2011_
+    - As the project is a UK-wide project, we chose to create variables specific to each UK nation's 2011 census categories: _EthnicityEngWales2011_, _EthnicityScot2011_ and _EthnicityNI2011_, as well as a UK-wide census 2011 variable based on [UK Government ethnicity harmonised standard](https://analysisfunction.civilservice.gov.uk/policy-store/ethnicity-harmonised-standard/#presentation-united-kingdom), named _EthnicityUK2011_
     - We also kept a broad ethnic group variable, named _Ethnicity6_, but instead of consisting of "White", "Black", "South Asian", "Mixed", "Other" and "Not Stated", we changed "South Asian" to "Asian" to match all the UK censuses 2011 and included East Asian ethnic groups in this new group
-    - We created a UK-wide census 2011 variable based on [UK Government ethnicity harmonised standard](https://analysisfunction.civilservice.gov.uk/policy-store/ethnicity-harmonised-standard/#presentation-united-kingdom), named _EthnicityUK2011_
-    - The table below shows the main mapping between the different ethnicity variables
+    - The table below shows the mapping between the different ethnicity variables:
 
       |	EthnicityEngWales2011	| EthnicityScot2011	|	EthnicityNI2011 |	EthnicityUK2011	|	Ethnicity6|	
       |----|---------|------|----|----|
@@ -114,12 +112,16 @@ This page gives details on the codelists used in the Curation Harmonisation proj
     
   - **Codes that were regrouped**:
     - 'Chinese' was regrouped in _Ethnicity6_ as 'Asian' (previously 'Other')
+    - Scottish census 2011 distinguishes between 'Scottish' and 'Other British' thus the codes with the following descriptions were recoded to 'Scottish': _"scottish - ethnic category 2001 census", "white: scottish - scotland ethnic category 2011 census", "white scottish"_
+    - Scottish census 2011 also distinguishes 'Polish' from the 'Other White' category thus the codes with the following descriptions were recoded to 'Polish': _"white: polish - scotland ethnic category 2011 census", "polish - ethnic category 2001 census"_
     - To avoid listing out each nation's census 2011 mappings (see above), we have specified the change from the original codelist variable _eth16_ to our codelist variable _EthnicityEngWales2011_ below:
 
    | Code description(s) |     eth16    |	EthnicityEngWales2011	  |	Reason for change    |
    |:----|:---------|:------|:------|
    | "other ethnic group: arab - eng+wales ethnic cat 2011 census", "north african - ethnic category 2001 census", "moroccan - ethnic category 2001 census", "other ethnic grp: arab/arab scot/arab british- scotland 2011", "north african arab (nmo)", "arab - ethnic category 2001 census", "other ethnic group: arab - ni ethnic category 2011 census"| Other ethnic group|Arab|Regrouping based on UK census 2011|
    |"malaysian - ethnic category 2001 census", "vietnamese - ethnic category 2001 census", "filipino - ethnic category 2001 census", "japanese - ethnic category 2001 census", "vietnamese", "asian and chinese - ethnic category 2001 census"|Other ethnic group|Other Asian|Regrouping based on UK census 2011|
+  |"irish traveller - northern ireland ethnic cat 2011 census", "white: gypsy/irish traveller - eng+wales eth cat 2011 census", "white: gypsy/irish traveller - scotland ethnic cat 2011 cens", "irish traveller - ethnic category 2001 census", "irish traveller"|Irish|Gypsy or Irish Traveller|Correction/Regrouping based on UK census 2011|
+  |"gypsy/romany - ethnic category 2001 census", "traveller - ethnic category 2001 census"|Other White|Gypsy or Irish Traveller|Regrouping based on UK census 2011|
    | "white" | Irish | British | Correction |
    | "other ethnic, asian/white origin","chinese and white - ethnic category 2001 census" | Other Mixed | White and Asian | Correction |
    | "new zealand ethnic groups" | Not Stated | Other ethnic group | Correction |
@@ -144,7 +146,9 @@ This page gives details on the codelists used in the Curation Harmonisation proj
 ## Height/weight/BMI
 * **File:** [height_weight_bmi_values-aurum_snomed_read.txt](https://github.com/NHLI-Respiratory-Epi/Curation-Harmonisation/blob/main/codelists/height_weight_bmi_values-aurum_snomed_read.txt)
 
-* **Source:** []()
+* **Source:** Adapted from [Philip Stone's PhD work (NHLI Respiratory Epidemiology team)](https://github.com/pstone22/PhD/blob/main/codelists/Chapter%208/CPRD%20Aurum/BMI.csv)
+
+* **Additional comments:**
 
 ## Smoking status
 * **File:** [smoking_status-aurum_gold_snomed_read.txt](https://github.com/NHLI-Respiratory-Epi/Curation-Harmonisation/blob/main/codelists/smoking_status-aurum_gold_snomed_read.txt)
