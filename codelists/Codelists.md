@@ -65,7 +65,81 @@ This page gives details on the codelists used in the Curation Harmonisation proj
 ## Ethnicity
 * **File:** [ethnicity-aurum_snomed_read_hes.txt](https://github.com/NHLI-Respiratory-Epi/Curation-Harmonisation/blob/main/codelists/ethnicity-aurum_snomed_read_hes.txt)
 
-* **Source:** []()
+* **Source:** Adapted from [COVID-Collateral](https://github.com/johntaz/COVID-Collateral/blob/master/codelists/CSV/aurum_codelist_ethnicity.csv)
+
+* **Additional comments:**
+  - The COVID-Collateral ethnicity codelist was adapted for this project
+  - **Main changes:**
+    - As the project is a UK-wide project, we chose to create variables specific to each UK nation's 2011 census categories: _EthnicityEngWales2011_, _EthnicityScot2011_ and _EthnicityNI2011_
+    - We also kept a broad ethnic group variable, named _Ethnicity6_, but instead of consisting of "White", "Black", "South Asian", "Mixed", "Other" and "Not Stated", we changed "South Asian" to "Asian" to match all the UK censuses 2011 and included East Asian ethnic groups in this new group
+    - We created a UK-wide census 2011 variable based on [UK Government ethnicity harmonised standard](https://analysisfunction.civilservice.gov.uk/policy-store/ethnicity-harmonised-standard/#presentation-united-kingdom), named _EthnicityUK2011_
+    - The table below shows the main mapping between the different ethnicity variables
+
+      |	EthnicityEngWales2011	| EthnicityScot2011	|	EthnicityNI2011 |	EthnicityUK2011	|	Ethnicity6|	
+      |----|---------|------|----|----|
+      |Bangladeshi|	Bangladeshi|	Bangladeshi|	Bangladeshi|	Asian|
+      |Chinese|	Chinese|	Chinese|	Chinese|	Asian|
+      |Indian|	Indian|	Indian|	Indian|	Asian|
+      |Other Asian|	Other Asian|	Other Asian|	Other Asian|	Asian|
+      |Pakistani|	Pakistani|	Pakistani|	Pakistani|	Asian|
+      |African|	African|	African|	Black African|	Black|
+      |Caribbean|	Caribbean|	Caribbean|	Black Caribbean	|Black|
+      |Other Black|	Other Black|	Other Black|	Other Black|	Black|
+      |Other Mixed|	Other Mixed|	Mixed|	Mixed|	Mixed|
+      |White and Asian|	White and Asian|	Mixed|	Mixed|	Mixed|
+      |White and Black African|	White and Black African|	Mixed|	Mixed|	Mixed|
+      |White and Black Caribbean|	White and Black Caribbean|	Mixed|	Mixed|	Mixed|
+      |Not Stated|	Not Stated|	Not Stated|	Not Stated|	Not Stated|
+      |Arab	|Arab	|Arab	|Other ethnic group|	Other|
+      |Other ethnic group	|Other ethnic group	|Other ethnic group	|Other ethnic group	|Other|
+      |Gypsy or Irish Traveller	|Gypsy/Traveller	|Irish Traveller	|White	|White|
+      |Gypsy or Irish Traveller	|Gypsy/Traveller	|White	|White	|White|
+      |Irish	|Irish	|White	|White	|White|
+      |British	|Other British	|White	|White	|White|
+      |Other White|	Other White	|White	|White	|White|
+      |Other White	|Polish	|White	|White	|White|
+      |British	|Scottish	|White	|White	|White|
+
+  - **Codes that were dropped**:
+    - Generic codes for ethnicity which may have details written in free text (originally coded as 'Not Stated'):
+      - _"ethnic group finding","ethnic groups (census)","ethnic category","ethnic groups (1991 census) (uk)","ethnic groups (1991 census) (united kingdom)","ethnicity and other related nationality data","ethnic groups","ethnic category - 2001 census", "ethnic category - 2011 census", "ethnic category - 2011 census england and wales", "ethnic category - 2011 census northern ireland", "ethnic category - 2011 census scotland","ethnicity / related nationality data","ethnicity","ethnic group","ethnicity / related nationality data - finding","race","country of origin","born in - country","ethnic group (1991 census) (uk)","ethnic category - 2011 census northern ireland simple reference set","ethnic category - 2011 census england and wales simple reference set","finding of ethnicity / related nationality data","ethnic background","on examination - ethnic group","ethnic groups (1991 census)","ethnic group (1991 census) (united kingdom)","ethnic category - 2011 census scotland simple reference set"_
+    - Codes with Emis code category ID of _19_ (= nationality) as infrequently used and nationality is not necessarily the same as ethnicity
+    - Codes with Read code starting with '_13y'_ as they are religions/beliefs, not necessarily ethnicities
+     
+  - **Codes that were added**:
+    - Codes with same descriptions or first three characters of Read code as those already in codelist (these were given same groupings as the original codes)
+    - Codes with Emis code category ID of 22 (= ethnicity)
+    - Codes with descriptions matching regex _"ethnic|^roma$"_ but not _"mother|father|carer|neutropenia|nose|lifestyle"_
+    - **Codes matching those previously dropped were not re-included**
+    
+  - **Codes that were regrouped**:
+    - 'Chinese' was regrouped in _Ethnicity6_ as 'Asian' (previously 'Other')
+    - To avoid listing out each nation's census 2011 mappings (see above), we have specified the change from the original codelist variable _eth16_ to our codelist variable _EthnicityEngWales2011_ below:
+
+   | Code description(s) |     eth16    |	EthnicityEngWales2011	  |	Reason for change    |
+   |:----|:---------|:------|:------|
+   | "other ethnic group: arab - eng+wales ethnic cat 2011 census", "north african - ethnic category 2001 census", "moroccan - ethnic category 2001 census", "other ethnic grp: arab/arab scot/arab british- scotland 2011", "north african arab (nmo)", "arab - ethnic category 2001 census", "other ethnic group: arab - ni ethnic category 2011 census"| Other ethnic group|Arab|Regrouping based on UK census 2011|
+   |"malaysian - ethnic category 2001 census", "vietnamese - ethnic category 2001 census", "filipino - ethnic category 2001 census", "japanese - ethnic category 2001 census", "vietnamese", "asian and chinese - ethnic category 2001 census"|Other ethnic group|Other Asian|Regrouping based on UK census 2011|
+   | "white" | Irish | British | Correction |
+   | "other ethnic, asian/white origin","chinese and white - ethnic category 2001 census" | Other Mixed | White and Asian | Correction |
+   | "new zealand ethnic groups" | Not Stated | Other ethnic group | Correction |
+   | "nigerian - ethnic category 2001 census" | Other Black | African | Correction |
+   |"black east african asian","black indo-caribbean","black indian sub-continent","black e afric asia/indo-caribb","black - other asian","black n african/arab/iranian","black arab","black north african","black iranian"|Other Black|Other Mixed|Correction|
+   |"black guyana", "caribbean island (nmo)", "black caribbean", "caribbean i./w.i./guyana (nmo)", "black caribbean/w.i./guyana", "guyana (nmo)", "west indian (nmo)", "black west indian", "race: afro-caribbean"|Other Black|Caribbean|Correction|
+   |"race: west indian", "west indian origin"|Other Asian|Caribbean|Correction|
+   |"other ethnic, mixed white orig", "other ethnic, mixed white origin"|Other Mixed|Other White|Correction|
+   |"o/e - ethnic group", "o/e - ethnic group nos", "o/e - ethnic origin", "ethnic groups (census) nos"|Not Stated| Other ethnic group | Correction|
+   |Regexes: _"not stated", "unknown" "declined"_ |N/A| Not Stated | New code|
+   |"black or african or caribbean or black british: other black or african or caribbean background - england and wales ethnic category 2011 census", "black or african or caribbean or black british: other black or african or caribbean background - northern ireland ethnic category 2011 census", "black"|N/A| Other Black | New code|
+   |"caribbean or black: black, black scottish or black british - scotland ethnic category 2011 census"|N/A| Caribbean | New code|
+   |"mixed multiple ethnic groups: any other mixed or multiple ethnic background - england and wales ethnic category 2011 census"|N/A| Other Mixed | New code|
+   |"gypsies", "gypsy"|N/A| Gypsy or Irish Traveller | New code|
+   |"portuguese", "new zealand european", "other european in new zealand", "race: white", "romanian","bulgarian", "czech", "slovak", "pakeha", "european origin", "slovak roma", "czech roma", "hungarian roma", "polish roma", "romanian roma", "bulgarian roma", "roma"|N/A| Other White | New code|
+   |"arabs", "yemeni", "middle eastern origin"|N/A| Arab | New code|
+   |"oriental", "japanese", "koreans", "nepalese", "nepali", "far eastern origin"|N/A| Other Asian | New code|
+   |"race: chinese"|N/A| Chinese | New code|
+   |"new zealand maori", "cook island maori", "brazilian", "niuean", "tokelauan", "fijian", "tongan", "samoan", "ethnic groups (census) nos", "country of origin nos", "north american origin", "south american origin", "australian origin", "tokelau"|N/A| Other ethnic group | New code|
+   |"mixed racial group"|N/A| Other Mixed | New code|
 
 ## Height/weight/BMI
 * **File:** [height_weight_bmi_values-aurum_snomed_read.txt](https://github.com/NHLI-Respiratory-Epi/Curation-Harmonisation/blob/main/codelists/height_weight_bmi_values-aurum_snomed_read.txt)
