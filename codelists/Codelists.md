@@ -2,7 +2,7 @@
 This page gives details on the codelists used in the Curation Harmonisation project and their sources.
 
 ## Asthma
-### Primary care
+### Primary care (Read/SNOMED-CT)
 * **File:** [definite_asthma_incidence_prevalence-aurum_snomed_read.txt](https://github.com/NHLI-Respiratory-Epi/Curation-Harmonisation/blob/main/codelists/definite_asthma_incidence_prevalence-aurum_snomed_read.txt)
 
 * **Source:** [Nissen et al., 2017](https://doi.org/10.1136%2Fbmjopen-2017-017474)
@@ -15,7 +15,7 @@ This page gives details on the codelists used in the Curation Harmonisation proj
 * **Source:** [HDRUK Phenotype Library: Asthma Secondary care - BREATHE recommended - 2](https://phenotypes.healthdatagateway.org/phenotypes/PH783/version/2207/detail/)
 
 ## Chronic Obstructive Pulmonary Disease (COPD)
-### Primary care
+### Primary care (Read/SNOMED-CT)
 * **File:** [definite_copd_incidence_prevalence-aurum_gold_snomed_read.txt](https://github.com/NHLI-Respiratory-Epi/Curation-Harmonisation/blob/main/codelists/definite_copd_incidence_prevalence-aurum_gold_snomed_read.txt)
 
 * **Source:** [HDRUK Phenotype Library: Chronic obstructive pulmonary disease (COPD) Primary care - 3  | SNOMED CT codes](https://phenotypes.healthdatagateway.org/phenotypes/PH797/detail/)
@@ -30,7 +30,7 @@ This page gives details on the codelists used in the Curation Harmonisation proj
 * **Source:** [HDRUK Phenotype Library: Chronic obstructive pulmonary disease (COPD) Secondary care - BREATHE recommended - 2](https://phenotypes.healthdatagateway.org/phenotypes/PH798/detail/)
 
 ## Interstitial Lung Disease (ILD)
-### Primary care
+### Primary care (Read/SNOMED-CT)
 * **File:** [definite_ild_incidence_prevalence_classification-aurum_snomed_read.txt](https://github.com/NHLI-Respiratory-Epi/Curation-Harmonisation/blob/main/codelists/definite_ild_incidence_prevalence_classification-aurum_snomed_read.txt)
 
 * **Source:** NHLI Respiratory Epidemiology team (including [validated Idiopathic Pulmonary Fibrosis (IPF) codes](https://github.com/NHLI-Respiratory-Epi/Validation-of-the-recording-of-Idiopathic-Pulmonary-Fibrosis-in-routinely-collected-electronic-healt/blob/main/broad_and_narrow_ipf-aurum_snomed_read.tsv) from [Morgan et al., 2023](https://doi.org/10.1186/s12890-023-02550-0)
@@ -62,7 +62,7 @@ This page gives details on the codelists used in the Curation Harmonisation proj
     - Any code descriptions with regex _'food|solids|essences|langerhans|alveolar and parietoalveolar conditions|external'_ or codes with regex _'^J9(8\\.[24]|9$)'_ were classified as other ILD
     - No codes were given a classification of narrow IPF
 
-## Ethnicity
+## Ethnicity (Read/SNOMED-CT/HES)
 * **File:** [ethnicity-aurum_snomed_read_hes.txt](https://github.com/NHLI-Respiratory-Epi/Curation-Harmonisation/blob/main/codelists/ethnicity-aurum_snomed_read_hes.txt)
 
 * **Source:** Adapted from [COVID-Collateral](https://github.com/johntaz/COVID-Collateral/blob/master/codelists/CSV/aurum_codelist_ethnicity.csv)
@@ -143,7 +143,7 @@ This page gives details on the codelists used in the Curation Harmonisation proj
    |"new zealand maori", "cook island maori", "brazilian", "niuean", "tokelauan", "fijian", "tongan", "samoan", "ethnic groups (census) nos", "country of origin nos", "north american origin", "south american origin", "australian origin", "tokelau"|N/A| Other ethnic group | New code|
    |"mixed racial group"|N/A| Other Mixed | New code|
 
-## Height/weight/BMI
+## Height/weight/BMI (Read/SNOMED-CT)
 * **File:** [height_weight_bmi_values-aurum_snomed_read.txt](https://github.com/NHLI-Respiratory-Epi/Curation-Harmonisation/blob/main/codelists/height_weight_bmi_values-aurum_snomed_read.txt)
 
 * **Source:** Created for the Curation Harmonisation project
@@ -155,17 +155,17 @@ This page gives details on the codelists used in the Curation Harmonisation proj
     - **BMI:** matching _"bmi|body mass index"_ AND not matching _"frax|submit|malnutrition universal screening tool|target|framingham|percentage|maximum"_
   -  Then we looked at the CPRD Aurum data for our cohorts to find out which codes actually had useful data values (or were similar descriptions to those with useful data values) and confirmed this new codelist with Professor Jenni Quint
 
-## Smoking status
+## Smoking status (Read/SNOMED-CT)
 * **File:** [smoking_status-aurum_gold_snomed_read.txt](https://github.com/NHLI-Respiratory-Epi/Curation-Harmonisation/blob/main/codelists/smoking_status-aurum_gold_snomed_read.txt)
 
 * **Source:** []()
 
-## COPD medications
+## COPD medications (dm+d/BNF/Read/ATC)
 * **File:** [copd_medications-aurum_dmd_bnf_read_atc.txt](https://github.com/NHLI-Respiratory-Epi/Curation-Harmonisation/blob/main/codelists/copd_medications-aurum_dmd_bnf_read_atc.txt)
 
 * **Source:** []()
 
-## Spirometry
+## Spirometry (Read/SNOMED-CT)
 * **File:** [spirometry-aurum_snomed_read.txt](https://github.com/NHLI-Respiratory-Epi/Curation-Harmonisation/blob/main/codelists/spirometry-aurum_snomed_read.txt)
 
 * **Source:** NHLI Respiratory Epidemiology team
