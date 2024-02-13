@@ -149,11 +149,11 @@ This page gives details on the codelists used in the Curation Harmonisation proj
 * **Source:** Created for the Curation Harmonisation project
 
 * **Additional comments:**
-  *  While there were many codelists available online for height/weight/body mass index, we decided to perform our own comprehensive search in the CPRD Aurum medical dictionary using the following regexes:
+  - While there were many codelists available online for height/weight/body mass index, we decided to perform our own comprehensive search in the CPRD Aurum medical dictionary using the following regexes:
     - **Height:** matching _"height"_ AND not matching _"knee height|average|unsuitable|ratio|centile|uterus|uterine|predict|heightened|refuse|weight|furniture|injury|unfit|footwear|sitting|fear|fundal|step|parent|jump|waterlow|over|under|weight for height|bp|fall|growth|declined"_
     - **Weight:** matching _"weight|obese"_ AND not matching _"body mass index|bmi|obese class|waterlow|knee|%|fetal|target|not available|referral|prostate|liver|diet|diffusion|injury|baseline weight|maternal|manage|vomit|centile|ideal|los|eating disorder|difficult|infant|premature|weightless|fixation|bearing|monitor|birth|symptom|weight decreas|obese build|symptomlesion|unfit|steady|sweat|velocity|lift|foot|placenta|eyelid|problem|static|education|therapy|trial|percentage|overweight child|pregnancy|bear|transfer|refus|concern|not done|unsuitable|maint|change|7pcl|trend|heparin|decline|kininogen|mth exam|stable|dry|height|childhood failure|weights|calculus|heavy|counterweight|preoccupation|procedure|ratio|chart|g/kg|property|regimen|amount|abdomen|estimate|tolerance|weighted|intervention|oedema|reason|weight - baby|clinic|(reference|sample) weight|risk to health|pattern|unintentional"_
     - **BMI:** matching _"bmi|body mass index"_ AND not matching _"frax|submit|malnutrition universal screening tool|target|framingham|percentage|maximum"_
-  *  Then we looked at the CPRD Aurum data for our cohorts to find out which codes actually had useful data values (or were similar descriptions to those with useful data values) and confirmed this new codelist with Professor Jenni Quint
+  -  Then we looked at the CPRD Aurum data for our cohorts to find out which codes actually had useful data values (or were similar descriptions to those with useful data values) and confirmed this new codelist with Professor Jenni Quint
 
 ## Smoking status
 * **File:** [smoking_status-aurum_gold_snomed_read.txt](https://github.com/NHLI-Respiratory-Epi/Curation-Harmonisation/blob/main/codelists/smoking_status-aurum_gold_snomed_read.txt)
