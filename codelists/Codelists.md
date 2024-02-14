@@ -2,21 +2,27 @@
 This page gives details on the codelists used in the Curation Harmonisation project and their sources.
 
 ## Asthma
-### Primary care (Read/SNOMED-CT)
+### Primary care
 * **File:** [definite_asthma_incidence_prevalence-aurum_snomed_read.txt](https://github.com/NHLI-Respiratory-Epi/Curation-Harmonisation/blob/main/codelists/definite_asthma_incidence_prevalence-aurum_snomed_read.txt)
+
+* **Coding system(s)**: Read; SNOMED-CT; Clinical Practice Research Datalink (CPRD) Aurum medcodeid
 
 * **Source:** [Nissen et al., 2017](https://doi.org/10.1136%2Fbmjopen-2017-017474)
 
 * **Additional comments:** Codes were classified as incident and/or prevalent manually using input from Professor Jenni Quint and her team (NHLI Respiratory Epidemiology team) from previous projects.
 
-### Secondary care (ICD10)
+### Secondary care
 * **File:** [HDRUKPhenotypeLibrary-PH783-asthma_secondary_care_BREATHE_recommended-C2426_ver_6252_codelist_20230406T141138.csv](https://github.com/NHLI-Respiratory-Epi/Curation-Harmonisation/blob/main/codelists/HDRUKPhenotypeLibrary-PH783-asthma_secondary_care_BREATHE_recommended-C2426_ver_6252_codelist_20230406T141138.csv)
+
+* **Coding system(s)**: ICD10
 
 * **Source:** [HDRUK Phenotype Library: Asthma Secondary care - BREATHE recommended - 2](https://phenotypes.healthdatagateway.org/phenotypes/PH783/version/2207/detail/)
 
 ## Chronic Obstructive Pulmonary Disease (COPD)
-### Primary care (Read/SNOMED-CT)
+### Primary care
 * **File:** [definite_copd_incidence_prevalence-aurum_gold_snomed_read.txt](https://github.com/NHLI-Respiratory-Epi/Curation-Harmonisation/blob/main/codelists/definite_copd_incidence_prevalence-aurum_gold_snomed_read.txt)
+
+* **Coding system(s)**: Read; SNOMED-CT; CPRD Aurum medcodeid; CPRD GOLD medcode
 
 * **Source:** [HDRUK Phenotype Library: Chronic obstructive pulmonary disease (COPD) Primary care - 3  | SNOMED CT codes](https://phenotypes.healthdatagateway.org/phenotypes/PH797/detail/)
 
@@ -24,14 +30,18 @@ This page gives details on the codelists used in the Curation Harmonisation proj
   - The codes were selected where column 'BREATHE recommended' is 'Y'.
   - The incident/prevalent tags were re-classified for this project and approved by Professor Jenni Quint. Any code descriptions containing regex _"follow|manage|plan|review|multiple.*emergency|emergency.*since|monitor|rescue pack|invite|exacerbations in past"_ had incident set to 0 and prevalent set to 1.
 
-### Secondary care (ICD10)
+### Secondary care 
 * **File:** [HDRUKPhenotypeLibrary-PH798-COPD_secondary_care_BREATHE_recommended-C2484_ver_6368_codelist_20230106T095902.csv](https://github.com/NHLI-Respiratory-Epi/Curation-Harmonisation/blob/main/codelists/HDRUKPhenotypeLibrary-PH798-COPD_secondary_care_BREATHE_recommended-C2484_ver_6368_codelist_20230106T095902.csv)
 
+* **Coding system(s)**: ICD10
+  
 * **Source:** [HDRUK Phenotype Library: Chronic obstructive pulmonary disease (COPD) Secondary care - BREATHE recommended - 2](https://phenotypes.healthdatagateway.org/phenotypes/PH798/detail/)
 
 ## Interstitial Lung Disease (ILD)
-### Primary care (Read/SNOMED-CT)
+### Primary care
 * **File:** [definite_ild_incidence_prevalence_classification-aurum_snomed_read.txt](https://github.com/NHLI-Respiratory-Epi/Curation-Harmonisation/blob/main/codelists/definite_ild_incidence_prevalence_classification-aurum_snomed_read.txt)
+
+* **Coding system(s)**: Read; SNOMED-CT; CPRD Aurum medcodeid
 
 * **Source:** NHLI Respiratory Epidemiology team (including [validated Idiopathic Pulmonary Fibrosis (IPF) codes](https://github.com/NHLI-Respiratory-Epi/Validation-of-the-recording-of-Idiopathic-Pulmonary-Fibrosis-in-routinely-collected-electronic-healt/blob/main/broad_and_narrow_ipf-aurum_snomed_read.tsv) from [Morgan et al., 2023](https://doi.org/10.1186/s12890-023-02550-0)
 
@@ -46,8 +56,10 @@ This page gives details on the codelists used in the Curation Harmonisation proj
       - Any code descriptions with definite subclassification of rheumatoid arthritis (RA)-ILD or Scleroderma-Associated (SSc)-ILD in master codelist (and not in any of the previous subclassification) or with regex _'sarcoidosis|rheumatoid arthritis|scler|lupus|sjogren|polymyositis|connective|granulomatosis|dermatomyositis|collagen'_ were reclassified to autoimmune-related ILD
       - All other codes were reclassified as other ILD
   
-### Secondary care (ICD10)
+### Secondary care
 * **File:** [ild-icd10.txt](https://github.com/NHLI-Respiratory-Epi/Curation-Harmonisation/blob/main/codelists/ild-icd10.txt)
+
+* **Coding system(s)**: ICD10
 
 * **Source:** NHLI Respiratory Epidemiology team
 
@@ -62,8 +74,10 @@ This page gives details on the codelists used in the Curation Harmonisation proj
     - Any code descriptions with regex _'food|solids|essences|langerhans|alveolar and parietoalveolar conditions|external'_ or codes with regex _'^J9(8\\.[24]|9$)'_ were classified as other ILD
     - No codes were given a classification of narrow IPF
 
-## Ethnicity (Read/SNOMED-CT/HES)
+## Ethnicity
 * **File:** [ethnicity-aurum_snomed_read_hes.txt](https://github.com/NHLI-Respiratory-Epi/Curation-Harmonisation/blob/main/codelists/ethnicity-aurum_snomed_read_hes.txt)
+
+* **Coding system(s)**: Read; SNOMED-CT; CPRD Aurum medcodeid; Hospital Episode Statistics (HES) ethnicity code
 
 * **Source:** Adapted from [COVID-Collateral](https://github.com/johntaz/COVID-Collateral/blob/master/codelists/CSV/aurum_codelist_ethnicity.csv)
 
@@ -143,8 +157,10 @@ This page gives details on the codelists used in the Curation Harmonisation proj
    |"new zealand maori", "cook island maori", "brazilian", "niuean", "tokelauan", "fijian", "tongan", "samoan", "ethnic groups (census) nos", "country of origin nos", "north american origin", "south american origin", "australian origin", "tokelau"|N/A| Other ethnic group | New code|
    |"mixed racial group"|N/A| Other Mixed | New code|
 
-## Height/weight/BMI (Read/SNOMED-CT)
+## Height/weight/BMI
 * **File:** [height_weight_bmi_values-aurum_snomed_read.txt](https://github.com/NHLI-Respiratory-Epi/Curation-Harmonisation/blob/main/codelists/height_weight_bmi_values-aurum_snomed_read.txt)
+
+* **Coding system(s)**: Read; SNOMED-CT; CPRD Aurum medcodeid
 
 * **Source:** Created for the Curation Harmonisation project
 
@@ -155,17 +171,33 @@ This page gives details on the codelists used in the Curation Harmonisation proj
     - **BMI:** matching _"bmi|body mass index"_ AND not matching _"frax|submit|malnutrition universal screening tool|target|framingham|percentage|maximum"_
   -  Then we looked at the CPRD Aurum data for our cohorts to find out which codes actually had useful data values (or were similar descriptions to those with useful data values) and confirmed this new codelist with Professor Jenni Quint
 
-## Smoking status (Read/SNOMED-CT)
+## Smoking status
 * **File:** [smoking_status-aurum_gold_snomed_read.txt](https://github.com/NHLI-Respiratory-Epi/Curation-Harmonisation/blob/main/codelists/smoking_status-aurum_gold_snomed_read.txt)
 
+* **Coding system(s)**: Read; SNOMED-CT; CPRD Aurum medcodeid; CPRD GOLD medcode
+
 * **Source:** []()
 
-## COPD medications (dm+d/BNF/Read/ATC)
+## COPD medications
 * **File:** [copd_medications-aurum_dmd_bnf_read_atc.txt](https://github.com/NHLI-Respiratory-Epi/Curation-Harmonisation/blob/main/codelists/copd_medications-aurum_dmd_bnf_read_atc.txt)
 
-* **Source:** []()
+* **Coding system(s)**: Read; Dictionary of medicines and devices (dm+d); British National Formulary (BNF); Anatomical Therapeutic Chemical (ATC); CPRD Aurum prodcodeid
 
-## Spirometry (Read/SNOMED-CT)
+* **Source:** Adapted from codelist by Hannah Whitaker, NHLI Respiratory Epidemiology team
+
+* **Additional comments:**
+  - The _groups_ variable in the original codelist was replaced with a new variable _category_ which gives explicit categories to each drug
+  - Theophylline and PDE4i drugs were added
+  - We searched the CPRD Aurum product dictionary for additional drugs with the same drug substance names from each category and searched to see if there are any more with the same drug substance name with an appropriate route of admission (e.g. for the inhalers, _routeofadministration_ was limited to ‘inhalation’)
+  - Additional codes were added with drug substance names of:
+    - "budesonide/ formoterol fumarate dihydrate/ glycopyrronium bromide" for triple inhalers
+    - "formoterol fumarate dihydrate/ glycopyrronium bromide" for LABA-LAMA
+  - The following drug substance names were dropped: "ampicillin", "cefadroxil monohydrate"
+  - For non-inhaler categories, drugs were dropped where _routeofadministration_ is 'oral'
+
+## Spirometry
 * **File:** [spirometry-aurum_snomed_read.txt](https://github.com/NHLI-Respiratory-Epi/Curation-Harmonisation/blob/main/codelists/spirometry-aurum_snomed_read.txt)
+
+* **Coding system(s)**: Read; SNOMED-CT; CPRD Aurum medcodeid
 
 * **Source:** NHLI Respiratory Epidemiology team
