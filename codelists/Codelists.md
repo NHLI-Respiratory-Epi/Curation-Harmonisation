@@ -1,5 +1,7 @@
 # Codelists #
-This page gives details on the codelists used in the Curation Harmonisation project and their sources.
+This page gives details on the codelists used in the Curation Harmonisation project and their sources. 
+
+To access original codelists that are not linked here, please contact sara.hatam@ed.ac.uk 
 
 ## Asthma
 ### Primary care
@@ -43,7 +45,7 @@ This page gives details on the codelists used in the Curation Harmonisation proj
 
 * **Coding system(s)**: Read; SNOMED-CT; CPRD Aurum medcodeid
 
-* **Source:** Adapted from codelist provided by Ann Morgan in the Respiratory Electronic Health Record group (including [validated Idiopathic Pulmonary Fibrosis (IPF) codes](https://github.com/NHLI-Respiratory-Epi/Validation-of-the-recording-of-Idiopathic-Pulmonary-Fibrosis-in-routinely-collected-electronic-healt/blob/main/broad_and_narrow_ipf-aurum_snomed_read.tsv) from [Morgan et al., 2023](https://doi.org/10.1186/s12890-023-02550-0)
+* **Source:** Adapted from codelist provided by Ann Morgan, Respiratory Electronic Health Record group (including [validated Idiopathic Pulmonary Fibrosis (IPF) codes](https://github.com/NHLI-Respiratory-Epi/Validation-of-the-recording-of-Idiopathic-Pulmonary-Fibrosis-in-routinely-collected-electronic-healt/blob/main/broad_and_narrow_ipf-aurum_snomed_read.tsv) from [Morgan et al., 2023](https://doi.org/10.1186/s12890-023-02550-0)
 
 * **Additional comments:**
   - ILD is hard to code up due to the heterogenous nature so we used a draft master codelist from Respiratory Electronic Health Record group which tagged codes into definite or possible ILD as well as possible or definite various ILD subclassifications with multiple clinicians' input, and adapted it for this project
