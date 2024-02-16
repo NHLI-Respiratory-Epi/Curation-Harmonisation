@@ -9,7 +9,7 @@ This page gives details on the codelists used in the Curation Harmonisation proj
 
 * **Source:** [Nissen et al., 2017](https://doi.org/10.1136%2Fbmjopen-2017-017474)
 
-* **Additional comments:** Codes were classified as incident and/or prevalent manually using input from Professor Jenni Quint and her team (NHLI Respiratory Epidemiology team) from previous projects.
+* **Additional comments:** Codes were classified as incident and/or prevalent manually using input from Respiratory Electronic Health Record group led by Professor Jenni Quint.
 
 ### Secondary care
 * **File:** [HDRUKPhenotypeLibrary-PH783-asthma_secondary_care_BREATHE_recommended-C2426_ver_6252_codelist_20230406T141138.csv](https://github.com/NHLI-Respiratory-Epi/Curation-Harmonisation/blob/main/codelists/HDRUKPhenotypeLibrary-PH783-asthma_secondary_care_BREATHE_recommended-C2426_ver_6252_codelist_20230406T141138.csv)
@@ -43,10 +43,10 @@ This page gives details on the codelists used in the Curation Harmonisation proj
 
 * **Coding system(s)**: Read; SNOMED-CT; CPRD Aurum medcodeid
 
-* **Source:** NHLI Respiratory Epidemiology team (including [validated Idiopathic Pulmonary Fibrosis (IPF) codes](https://github.com/NHLI-Respiratory-Epi/Validation-of-the-recording-of-Idiopathic-Pulmonary-Fibrosis-in-routinely-collected-electronic-healt/blob/main/broad_and_narrow_ipf-aurum_snomed_read.tsv) from [Morgan et al., 2023](https://doi.org/10.1186/s12890-023-02550-0)
+* **Source:** Adapted from codelist provided by Ann Morgan in the Respiratory Electronic Health Record group (including [validated Idiopathic Pulmonary Fibrosis (IPF) codes](https://github.com/NHLI-Respiratory-Epi/Validation-of-the-recording-of-Idiopathic-Pulmonary-Fibrosis-in-routinely-collected-electronic-healt/blob/main/broad_and_narrow_ipf-aurum_snomed_read.tsv) from [Morgan et al., 2023](https://doi.org/10.1186/s12890-023-02550-0)
 
 * **Additional comments:**
-  - ILD is hard to code up due to the heterogenous nature so we used a draft master codelist from NHLI Respiratory Epidemiology team available **here** which tagged codes into definite or possible ILD as well as possible or definite various ILD subclassifications with multiple clinicians' input, and adapted it for this project.
+  - ILD is hard to code up due to the heterogenous nature so we used a draft master codelist from Respiratory Electronic Health Record group which tagged codes into definite or possible ILD as well as possible or definite various ILD subclassifications with multiple clinicians' input, and adapted it for this project
   - We used only codes tagged as definite ILD and dropped the following codes from the master codelist with descriptions: _"alveolar capillary block", "alveolar microlithiasis", "alveolar proteinosis", "alveolitis due to cryptostroma corticale"_
   - ILD subclassifications were re-done with Professor Jenni Quint's approval:
       - Due to the challenging nature of distinguishing ILD subclassifications, we simplified categories to the following: broad IPF, narrow IPF, treatment-related, exposure-related, autoimmune-related and other
@@ -61,10 +61,10 @@ This page gives details on the codelists used in the Curation Harmonisation proj
 
 * **Coding system(s)**: ICD10
 
-* **Source:** NHLI Respiratory Epidemiology team
+* **Source:** Provided by Professor Jenni Quint but adapted to include ILD subclassifications
 
 * **Additional comments:**
-  - To match ILD primary care codelist, the same ILD subclassifications were applied here: broad IPF, narrow IPF, treatment-related, exposure-related, autoimmune-related and other
+  - To match ILD primary care codelist, the same ILD subclassifications were applied here (apart from narrow IPF which there were no codes matching): broad IPF, treatment-related, exposure-related, autoimmune-related and other
   - Some primary care code descriptions match the ICD10 descriptions so the same classifications were given for these codes.
   - For the rest of the unclassified codes, the following regexes were applied with resulting classifications approved by Professor Jenni Quint:
     - Any code descriptions with regex _'drug|radiation'_ were classified as treatment-related ILD
@@ -72,7 +72,6 @@ This page gives details on the codelists used in the Curation Harmonisation proj
     - Any code descriptions with regex _'sarcoidosis|rheum|scler|lupus|sjogren|connective|granulomatosis|dermatomyositis|collagen|sjogren|hiv|myositis|polyarteritis|overlap'_ were classified as autoimmune-related ILD
     - Any codes with regex _'^J84($|\\.[189])'_ were classified as broad IPF
     - Any code descriptions with regex _'food|solids|essences|langerhans|alveolar and parietoalveolar conditions|external'_ or codes with regex _'^J9(8\\.[24]|9$)'_ were classified as other ILD
-    - No codes were given a classification of narrow IPF
 
 ## Ethnicity
 * **File:** [ethnicity-aurum_snomed_read_hes.txt](https://github.com/NHLI-Respiratory-Epi/Curation-Harmonisation/blob/main/codelists/ethnicity-aurum_snomed_read_hes.txt)
@@ -169,7 +168,7 @@ This page gives details on the codelists used in the Curation Harmonisation proj
     - **Height:** matching _"height"_ AND not matching _"knee height|average|unsuitable|ratio|centile|uterus|uterine|predict|heightened|refuse|weight|furniture|injury|unfit|footwear|sitting|fear|fundal|step|parent|jump|waterlow|over|under|weight for height|bp|fall|growth|declined"_
     - **Weight:** matching _"weight|obese"_ AND not matching _"body mass index|bmi|obese class|waterlow|knee|%|fetal|target|not available|referral|prostate|liver|diet|diffusion|injury|baseline weight|maternal|manage|vomit|centile|ideal|los|eating disorder|difficult|infant|premature|weightless|fixation|bearing|monitor|birth|symptom|weight decreas|obese build|symptomlesion|unfit|steady|sweat|velocity|lift|foot|placenta|eyelid|problem|static|education|therapy|trial|percentage|overweight child|pregnancy|bear|transfer|refus|concern|not done|unsuitable|maint|change|7pcl|trend|heparin|decline|kininogen|mth exam|stable|dry|height|childhood failure|weights|calculus|heavy|counterweight|preoccupation|procedure|ratio|chart|g/kg|property|regimen|amount|abdomen|estimate|tolerance|weighted|intervention|oedema|reason|weight - baby|clinic|(reference|sample) weight|risk to health|pattern|unintentional"_
     - **BMI:** matching _"bmi|body mass index"_ AND not matching _"frax|submit|malnutrition universal screening tool|target|framingham|percentage|maximum"_
-  -  Then we looked at the CPRD Aurum data for our cohorts to find out which codes actually had useful data values (or were similar descriptions to those with useful data values) and confirmed this new codelist with Professor Jenni Quint
+  -  Then we looked at the CPRD Aurum data for our cohorts to find out which codes actually had useful data values (or had similar descriptions to those with useful data values) and confirmed this new codelist with Professor Jenni Quint
 
 ## Smoking status
 * **File:** [smoking_status-aurum_gold_snomed_read.txt](https://github.com/NHLI-Respiratory-Epi/Curation-Harmonisation/blob/main/codelists/smoking_status-aurum_gold_snomed_read.txt)
@@ -183,21 +182,36 @@ This page gives details on the codelists used in the Curation Harmonisation proj
 
 * **Coding system(s)**: Read; Dictionary of medicines and devices (dm+d); British National Formulary (BNF); Anatomical Therapeutic Chemical (ATC); CPRD Aurum prodcodeid
 
-* **Source:** Adapted from codelist by Hannah Whitaker, NHLI Respiratory Epidemiology team
+* **Source:** Adapted from codelist provided by Hannah Whittaker, Respiratory Electronic Health Record group led by Professor Jenni Quint
 
 * **Additional comments:**
-  - The _groups_ variable in the original codelist was replaced with a new variable _category_ which gives explicit categories to each drug
-  - Theophylline and PDE4i drugs were added
-  - We searched the CPRD Aurum product dictionary for additional drugs with the same drug substance names from each category and searched to see if there are any more with the same drug substance name with an appropriate route of admission (e.g. for the inhalers, _routeofadministration_ was limited to ‘inhalation’)
-  - Additional codes were added with drug substance names of:
-    - "budesonide/ formoterol fumarate dihydrate/ glycopyrronium bromide" for triple inhalers
-    - "formoterol fumarate dihydrate/ glycopyrronium bromide" for LABA-LAMA
-  - The following drug substance names were dropped: "ampicillin", "cefadroxil monohydrate"
-  - For non-inhaler categories, drugs were dropped where _routeofadministration_ is 'oral'
+  - Hannah Whittaker's codelist was updated in collaboration with Professor Jenni Quint
+  - The _groups_ variable in the original codelist was replaced with a new variable _category_ which gives explicit categories to each drug:
+    - 'abx' = antibiotics
+    - 'ocs' = oral corticosteroids
+    - 'ics' = inhaled corticosteroids
+    - 'laba' = long-acting bronchodilator (LABA) inhalers
+    - 'lama' = long-acting muscarinic antagonist (LAMA) inhalers
+    - 'saba' = short-acting bronchodilator (SABA) inhalers
+    - 'sama' = short-acting muscarinic antagonist (SAMA) inhalers
+    - 'laba-ics' = combination of LABA and ICS
+    - 'laba-lama' = combination of LABA and LAMA
+    - 'saba-sama' = combination of SABA and SAMA
+    - 'triple' = triple inhaled therapy (i.e ICS + LABA + LAMA) 
+  - Codes were added:
+    - Theophylline drugs (_category_ = 'theophylline') were added by finding drugs with _"theophylline sodium glycinate", "theophylline"_ in _DrugSubstanceName_ in CPRD Aurum product dictionary
+    - Phosphodiesterase-4 inhibitor (PDE4i) drugs (_category_ = 'pde4i') were added with regex _'roflumilast|apremilast'_ in _DrugSubstanceName_ in CPRD Aurum product dictionary
+    - We searched the CPRD Aurum product dictionary for additional drugs with the same _DrugSubstanceName_ from each category and searched to see if there are any more with the same _DrugSubstanceName_ with an appropriate route of admission (e.g. for the inhalers, _RouteOfAdministration_ was limited to ‘inhalation’)
+    - To future-proof the codelist, newer drugs were added by searching for the following _DrugSubstanceName_ in CPRD Aurum product dictionary:
+      - "budesonide/ formoterol fumarate dihydrate/ glycopyrronium bromide" for category 'triple' 
+      - "formoterol fumarate dihydrate/ glycopyrronium bromide" for category 'laba-lama'
+  - Codes were dropped:
+    - The codes with the following _DrugSubstanceName_ were dropped: _"ampicillin", "cefadroxil monohydrate"_
+    - For non-inhaler categories, drugs were dropped where _RouteOfAdministration_ is NOT 'oral'
 
 ## Spirometry
 * **File:** [spirometry-aurum_snomed_read.txt](https://github.com/NHLI-Respiratory-Epi/Curation-Harmonisation/blob/main/codelists/spirometry-aurum_snomed_read.txt)
 
 * **Coding system(s)**: Read; SNOMED-CT; CPRD Aurum medcodeid
 
-* **Source:** NHLI Respiratory Epidemiology team
+* **Source:** Respiratory Electronic Health Record group led by Professor Jenni Quint
