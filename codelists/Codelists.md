@@ -1,8 +1,6 @@
 # Codelists #
 This page gives details on the codelists used in the Curation Harmonisation project and their sources. 
 
-To access original codelists that are not linked here, please contact sara.hatam@ed.ac.uk 
-
 ## Asthma
 ### Primary care
 * **File:** [definite_asthma_incidence_prevalence-aurum_snomed_read.txt](https://github.com/NHLI-Respiratory-Epi/Curation-Harmonisation/blob/main/codelists/definite_asthma_incidence_prevalence-aurum_snomed_read.txt)
