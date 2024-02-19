@@ -177,7 +177,13 @@ To access original codelists that are not linked here, please contact sara.hatam
 
 * **Coding system(s)**: Read; SNOMED-CT; CPRD Aurum medcodeid; CPRD GOLD medcode
 
-* **Source:** []()
+* **Source:** Adapted from a combination of codelists from [CALIBER]() and [Philip Stone]()
+
+* **Additional comments:**
+  - Smoking status categories changed to numbers:
+    - 0 = never smoker
+    - 1 = ex-smoker
+    - 2 = current smoker
 
 ## COPD medications
 * **File:** [copd_medications-aurum_dmd_bnf_read_atc.txt](https://github.com/NHLI-Respiratory-Epi/Curation-Harmonisation/blob/main/codelists/copd_medications-aurum_dmd_bnf_read_atc.txt)
