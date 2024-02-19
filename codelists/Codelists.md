@@ -175,7 +175,7 @@ This page gives details on the codelists used in the Curation Harmonisation proj
 
 * **Coding system(s)**: Read; SNOMED-CT; CPRD Aurum medcodeid; CPRD GOLD medcode
 
-* **Source:** Adapted from a combination of codelists from [CALIBER]() and [Philip Stone]()
+* **Source:** Adapted from a combination of codelists from [CALIBER](http://old.caliberresearch.org/portal/show/smoking_status_gprd) and Philip Stone, Respiratory Electronic Health Record group
 
 * **Additional comments:**
   - Smoking status categories changed to numbers:
