@@ -3,7 +3,7 @@ This page gives details on the codelists used in the Curation Harmonisation proj
 
 ## Asthma
 ### Primary care
-* **File:** [definite_asthma_incidence_prevalence-aurum_snomed_read.txt](https://github.com/NHLI-Respiratory-Epi/Curation-Harmonisation/blob/main/codelists/definite_asthma_incidence_prevalence-aurum_snomed_read.txt)
+* **File:** [definite_asthma_incidence_prevalence-aurum_snomed_read.tsv](definite_asthma_incidence_prevalence-aurum_snomed_read.tsv)
 
 * **Coding system(s)**: Read; SNOMED-CT; Clinical Practice Research Datalink (CPRD) Aurum medcodeid
 
@@ -20,7 +20,7 @@ This page gives details on the codelists used in the Curation Harmonisation proj
 
 ## Chronic Obstructive Pulmonary Disease (COPD)
 ### Primary care
-* **File:** [definite_copd_incidence_prevalence-aurum_gold_snomed_read.txt](https://github.com/NHLI-Respiratory-Epi/Curation-Harmonisation/blob/main/codelists/definite_copd_incidence_prevalence-aurum_gold_snomed_read.txt)
+* **File:** [definite_copd_incidence_prevalence-aurum_gold_snomed_read.tsv](definite_copd_incidence_prevalence-aurum_gold_snomed_read.tsv)
 
 * **Coding system(s)**: Read; SNOMED-CT; CPRD Aurum medcodeid; CPRD GOLD medcode
 
@@ -39,7 +39,7 @@ This page gives details on the codelists used in the Curation Harmonisation proj
 
 ## Interstitial Lung Disease (ILD)
 ### Primary care
-* **File:** [definite_ild_incidence_prevalence_classification-aurum_snomed_read.txt](https://github.com/NHLI-Respiratory-Epi/Curation-Harmonisation/blob/main/codelists/definite_ild_incidence_prevalence_classification-aurum_snomed_read.txt)
+* **File:** [definite_ild_incidence_prevalence_classification-aurum_snomed_read.tsv](definite_ild_incidence_prevalence_classification-aurum_snomed_read.tsv)
 
 * **Coding system(s)**: Read; SNOMED-CT; CPRD Aurum medcodeid
 
@@ -57,7 +57,7 @@ This page gives details on the codelists used in the Curation Harmonisation proj
       - All other codes were reclassified as other ILD
   
 ### Secondary care
-* **File:** [ild-icd10.txt](https://github.com/NHLI-Respiratory-Epi/Curation-Harmonisation/blob/main/codelists/ild-icd10.txt)
+* **File:** [ild-icd10.tsv](ild-icd10.tsv)
 
 * **Coding system(s)**: ICD10
 
@@ -74,7 +74,7 @@ This page gives details on the codelists used in the Curation Harmonisation proj
     - Any code descriptions with regex _'food|solids|essences|langerhans|alveolar and parietoalveolar conditions|external'_ or codes with regex _'^J9(8\\.[24]|9$)'_ were classified as other ILD
 
 ## Ethnicity
-* **File:** [ethnicity-aurum_snomed_read_hes.txt](https://github.com/NHLI-Respiratory-Epi/Curation-Harmonisation/blob/main/codelists/ethnicity-aurum_snomed_read_hes.txt)
+* **File:** [ethnicity-aurum_snomed_read_hes.tsv](ethnicity-aurum_snomed_read_hes.tsv)
 
 * **Coding system(s)**: Read; SNOMED-CT; CPRD Aurum medcodeid; Hospital Episode Statistics (HES) ethnicity code
 
@@ -157,7 +157,7 @@ This page gives details on the codelists used in the Curation Harmonisation proj
    |"mixed racial group"|N/A| Other Mixed | New code|
 
 ## Height/weight/BMI
-* **File:** [height_weight_bmi_values-aurum_snomed_read.txt](https://github.com/NHLI-Respiratory-Epi/Curation-Harmonisation/blob/main/codelists/height_weight_bmi_values-aurum_snomed_read.txt)
+* **File:** [height_weight_bmi_values-aurum_snomed_read.tsv](height_weight_bmi_values-aurum_snomed_read.tsv)
 
 * **Coding system(s)**: Read; SNOMED-CT; CPRD Aurum medcodeid
 
@@ -171,7 +171,7 @@ This page gives details on the codelists used in the Curation Harmonisation proj
   -  Then we looked at the CPRD Aurum data for our cohorts to find out which codes actually had useful data values (or had similar descriptions to those with useful data values) and confirmed this new codelist with Professor Jenni Quint
 
 ## Smoking status
-* **File:** [smoking_status-aurum_gold_snomed_read.txt](https://github.com/NHLI-Respiratory-Epi/Curation-Harmonisation/blob/main/codelists/smoking_status-aurum_gold_snomed_read.txt)
+* **File:** [smoking_status-aurum_gold_snomed_read.tsv](smoking_status-aurum_gold_snomed_read.tsv)
 
 * **Coding system(s)**: Read; SNOMED-CT; CPRD Aurum medcodeid; CPRD GOLD medcode
 
@@ -184,7 +184,7 @@ This page gives details on the codelists used in the Curation Harmonisation proj
     - 2 = current smoker
 
 ## COPD medications
-* **File:** [copd_medications-aurum_dmd_bnf_read_atc.txt](https://github.com/NHLI-Respiratory-Epi/Curation-Harmonisation/blob/main/codelists/copd_medications-aurum_dmd_bnf_read_atc.txt)
+* **File:** [copd_medications-aurum_dmd_bnf_read_atc.tsv](copd_medications-aurum_dmd_bnf_read_atc.tsv)
 
 * **Coding system(s)**: Read; Dictionary of medicines and devices (dm+d); British National Formulary (BNF); Anatomical Therapeutic Chemical (ATC); CPRD Aurum prodcodeid
 
@@ -216,7 +216,7 @@ This page gives details on the codelists used in the Curation Harmonisation proj
     - For non-inhaler categories, drugs were dropped where _RouteOfAdministration_ is NOT 'oral'
 
 ## Spirometry
-* **File:** [spirometry-aurum_snomed_read.txt](https://github.com/NHLI-Respiratory-Epi/Curation-Harmonisation/blob/main/codelists/spirometry-aurum_snomed_read.txt)
+* **File:** [spirometry-aurum_snomed_read.tsv](spirometry-aurum_snomed_read.tsv)
 
 * **Coding system(s)**: Read; SNOMED-CT; CPRD Aurum medcodeid
 

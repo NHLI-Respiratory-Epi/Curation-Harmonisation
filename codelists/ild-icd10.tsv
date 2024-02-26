@@ -1,0 +1,97 @@
+code	codetype	description	broad_ipf	narrow_ipf	treatment_ild	exposure_ild	autoimmune_ild	other
+J70.2	ICD10	acute drug-induced interstitial lung disorders	0	0	1	0	0	0
+J70.0	ICD10	acute pulmonary manifestations due to radiation	0	0	1	0	0	0
+J67.7	ICD10	air-conditioner and humidifier lung	0	0	0	1	0	0
+J66.8	ICD10	airway disease due to other specific organic dusts	0	0	0	1	0	0
+J66	ICD10	airway disease due to specific organic dust	0	0	0	1	0	0
+J63.0	ICD10	aluminosis (of lung)	0	0	0	1	0	0
+J84.0	ICD10	alveolar and parietoalveolar conditions	0	0	0	0	0	1
+B44	ICD10	aspergillosis	0	0	0	1	0	0
+B44.9	ICD10	aspergillosis, unspecified	0	0	0	1	0	0
+J67.1	ICD10	bagassosis	0	0	0	1	0	0
+J63.1	ICD10	bauxite fibrosis (of lung)	0	0	0	1	0	0
+J63.2	ICD10	berylliosis	0	0	0	1	0	0
+J67.2	ICD10	bird fancier lung	0	0	0	1	0	0
+J68.0	ICD10	bronchitis and pneumonitis due to chemicals, gases, fumes and vapours	0	0	0	1	0	0
+J66.0	ICD10	byssinosis (airway disease due to cotton dust)	0	0	0	1	0	0
+J66.2	ICD10	cannabinosis	0	0	0	1	0	0
+J70.1	ICD10	chronic and other pulmonary manifestations due to radiation	0	0	1	0	0	0
+J70.3	ICD10	chronic drug-induced interstitial lung disorders	0	0	1	0	0	0
+J68.4	ICD10	chronic respiratory conditions due to chemicals, gases, fumes and vapours	0	0	0	1	0	0
+J60	ICD10	coalworker pneumoconiosis	0	0	0	1	0	0
+B44.7	ICD10	disseminated aspergillosis	0	0	0	1	0	0
+J70.4	ICD10	drug-induced interstitial lung disorders, unspecified	0	0	1	0	0	0
+M32.0	ICD10	drug-induced systemic lupus erythematosus	0	0	1	0	0	0
+J67.0	ICD10	farmer lung	0	0	0	1	0	0
+J66.1	ICD10	flax-dresser disease	0	0	0	1	0	0
+J63.3	ICD10	graphite fibrosis (of lung)	0	0	0	1	0	0
+B22.1	ICD10	hiv disease resulting in lymphoid interstitial pneumonitis	0	0	0	0	1	0
+J67	ICD10	hypersensitivity pneumonitis due to organic dust	0	0	0	1	0	0
+J67.8	ICD10	hypersensitivity pneumonitis due to other organic dusts	0	0	0	1	0	0
+J67.9	ICD10	hypersensitivity pneumonitis due to unspecified organic dust	0	0	0	1	0	0
+M60.0	ICD10	infective myositis	0	0	0	0	1	0
+J98.2	ICD10	interstitial emphysema	0	0	0	0	0	1
+M60.1	ICD10	interstitial myositis	0	0	0	0	1	0
+J84.9	ICD10	interstitial pulmonary disease unspecified	1	0	0	0	0	0
+B44.0	ICD10	invasive pulmonary aspergillosis	0	0	0	1	0	0
+J67.4	ICD10	maltworker lung	0	0	0	1	0	0
+J67.6	ICD10	maple-bark-stripper lung	0	0	0	1	0	0
+J67.5	ICD10	mushroom-worker lung	0	0	0	1	0	0
+M60	ICD10	myositis	0	0	0	0	1	0
+M60.9	ICD10	myositis, unspecified	0	0	0	0	1	0
+J68.3	ICD10	other acute and subacute respiratory conditions due to chemicals, gases, fumes and vapours	0	0	0	1	0	0
+J98.4	ICD10	other disorders of the lung	0	0	0	0	0	1
+B44.8	ICD10	other forms of aspergillosis	0	0	0	1	0	0
+M32.8	ICD10	other forms of systemic lupus erythematosus	0	0	0	0	1	0
+M34.8	ICD10	other forms of systemic sclerosis	0	0	0	0	1	0
+J84	ICD10	other interstitial pulmonary diseases	1	0	0	0	0	0
+J84.1	ICD10	other interstitial pulmonary diseases with fibrosis	1	0	0	0	0	1
+M60.8	ICD10	other myositis	0	0	0	0	1	0
+M35.1	ICD10	other overlap syndromes	0	0	0	0	1	0
+B44.1	ICD10	other pulmonary aspergillosis	0	0	0	1	0	0
+J68.8	ICD10	other respiratory conditions due to chemicals, gases, fumes and vapours	0	0	0	1	0	0
+J84.8	ICD10	other specified interstitial pulmonary diseases	1	0	0	0	0	1
+M35.8	ICD10	other specified systemic involvement of connective tissue	0	0	0	0	1	0
+M35	ICD10	other systemic involvement of connective tissue	0	0	0	0	1	0
+J65	ICD10	pneumoconiosis associated with tuberculosis	0	0	0	1	0	0
+J61	ICD10	pneumoconiosis due to asbestos and other mineral fibres	0	0	0	1	0	0
+J62	ICD10	pneumoconiosis due to dust containing silica	0	0	0	1	0	0
+J62.8	ICD10	pneumoconiosis due to other dust containing silica	0	0	0	1	0	0
+J63	ICD10	pneumoconiosis due to other inorganic dusts	0	0	0	1	0	0
+J63.8	ICD10	pneumoconiosis due to other specified inorganic dusts	0	0	0	1	0	0
+J62.0	ICD10	pneumoconiosis due to talc dust	0	0	0	1	0	0
+J69.0	ICD10	pneumonitis due to food and vomit	0	0	0	0	0	1
+J69.1	ICD10	pneumonitis due to oils and essences	0	0	0	0	0	1
+J69.8	ICD10	pneumonitis due to other solids and liquids	0	0	0	0	0	1
+J69	ICD10	pneumonitis due to solids and liquids	0	0	0	0	0	1
+M30.1	ICD10	polyarteritis with lung involvement [churg-strauss]	0	0	0	0	1	0
+M34.0	ICD10	progressive systemic sclerosis	0	0	0	0	1	0
+J68.1	ICD10	pulmonary oedema due to chemicals, gases, fumes and vapours	0	0	0	1	0	0
+J68	ICD10	respiratory conditions due to inhalation of chemicals, gases, fumes and vapours	0	0	0	1	0	0
+J70	ICD10	respiratory conditions due to other external agents	0	0	0	0	0	1
+J70.8	ICD10	respiratory conditions due to other specified external agents	0	0	0	0	0	1
+J70.9	ICD10	respiratory conditions due to unspecified external agent	0	0	0	0	0	1
+J99	ICD10	respiratory disorders in diseases classified elsewhere	0	0	0	0	0	1
+J99.1	ICD10	respiratory disorders in other diffuse connective tissue disorders	0	0	0	0	1	0
+J99.0	ICD10	rheumatoid lung disease (m05.1D)	0	0	0	0	1	0
+D86	ICD10	sarcoidosis	0	0	0	0	1	0
+D86.0	ICD10	sarcoidosis of lung	0	0	0	0	1	0
+D86.2	ICD10	sarcoidosis of lung with sarcodoisis of lymph nodes	0	0	0	0	1	0
+D86.8	ICD10	sarcoidosis of other and combined sites	0	0	0	0	1	0
+D86.9	ICD10	sarcoidosis, unspecified	0	0	0	0	1	0
+M35.0	ICD10	sicca syndrome [sjogren]	0	0	0	0	1	0
+J63.4	ICD10	siderosis	0	0	0	1	0	0
+J63.5	ICD10	stannosis	0	0	0	1	0	0
+J67.3	ICD10	suberosis	0	0	0	1	0	0
+M35.9	ICD10	systemic involvement of connective tissue, unspecified	0	0	0	0	1	0
+M32	ICD10	systemic lupus erythematosus	0	0	0	0	1	0
+M32.1	ICD10	systemic lupus erythematosus with organ or system involvement	0	0	0	0	1	0
+M32.9	ICD10	systemic lupus erythematosus, unspecified	0	0	0	0	1	0
+M34	ICD10	systemic sclerosis	0	0	0	0	1	0
+M34.9	ICD10	systemic sclerosis, unspecified	0	0	0	0	1	0
+B44.2	ICD10	tonsillar aspergillosis	0	0	0	1	0	0
+C96.6	ICD10	unifocal langerhans-cell histiocytosis	0	0	0	0	0	1
+J64	ICD10	unspecified pneumoconiosis	0	0	0	1	0	0
+J68.9	ICD10	unspecified respiratory condition due to chemicals, gases, fumes and vapours	0	0	0	1	0	0
+J68.2	ICD10	upper respiratory inflammation due to chemicals, gases, fumes and vapours, not elsewhere classified	0	0	0	1	0	0
+M31.3	ICD10	wegener granulomatosis	0	0	0	0	1	0
